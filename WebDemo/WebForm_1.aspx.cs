@@ -124,6 +124,11 @@ public partial class WebForm_1 : System.Web.UI.Page
         }
 
     }
+    public void myGridView_PageIndexChanging(object sender,GridViewPageEventArgs e)
+    {
+        UserGrid.PageIndex = e.NewPageIndex;
+        LoadDataGrid();
+    }
 }
 
 

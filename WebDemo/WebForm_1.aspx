@@ -88,7 +88,8 @@
             </div>
             <br />
             <asp:Label ID="Label2" runat="server" class="h4 mb-3" Text="Grid View"></asp:Label>
-            <asp:GridView ID="UserGrid" runat="server" AutoGenerateColumns="True" class="table table-bordered table-striped" />
+            <asp:GridView ID="UserGrid" runat="server" AutoGenerateColumns="True" AllowPaging="true" PageSize="5" OnPageIndexChanging="myGridView_PageIndexChanging"
+             class="table table-bordered table-striped" />
         </form>
 
     </div>
